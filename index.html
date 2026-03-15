@@ -56,7 +56,7 @@ section{
 
 h2{color:#222;margin-top:0}
 
-button{
+button, .jobButton{
   background:var(--primary);
   color:#fff;
   border:none;
@@ -66,6 +66,9 @@ button{
   font-size:16px;
   margin-top:10px;
   cursor:pointer;
+  text-align:center;
+  text-decoration:none;
+  display:inline-block;
 }
 
 input,select{
@@ -123,7 +126,6 @@ footer a{color:var(--primary);text-decoration:none}
 
 <nav>
   <a href="#services">Services</a>
-  <a href="#jobs">Jobs</a>
   <a href="#booking">Book</a>
   <a href="#privacy">Privacy</a>
   <a href="#terms">Terms</a>
@@ -144,15 +146,11 @@ footer a{color:var(--primary);text-decoration:none}
   </ul>
 </section>
 
-<section id="jobs">
-  <h2>Available Jobs, Internships & Learnerships</h2>
-  <ul>
-    <li><a href="https://example.com/job1" target="_blank">Internship – IT Support</a></li>
-    <li><a href="https://example.com/job2" target="_blank">Learnership – Electrical Technician</a></li>
-    <li><a href="https://example.com/job3" target="_blank">Junior Copywriter</a></li>
-    <li><a href="https://example.com/job4" target="_blank">Customer Service Representative</a></li>
-    <!-- Add more jobs here -->
-  </ul>
+<section id="job-application">
+  <h2>Apply for Jobs</h2>
+  <a class="jobButton" href="https://www.valterraplatinum.com/careers/job-opportunities/apply/jobdetail?jobid=0779de4a-df56-4139-b647-fa862c15a03e" target="_blank">
+    Apply Now at Valterra Platinum
+  </a>
 </section>
 
 <section id="booking">
