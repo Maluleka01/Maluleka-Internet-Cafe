@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Maluleka Internet Cafe & Job Portal</title>
+
+<style>
+
+body{
+font-family:Arial;
+margin:0;
+background:#f4f4f4;
+}
+
+header{
+background:#000;
+color:white;
+padding:40px;
+text-align:center;
+}
+
+nav{
+background:white;
+padding:12px;
+text-align:center;
+box-shadow:0 2px 6px rgba(0,0,0,0.2);
+}
+
+nav a{
+margin:10px;
+text-decoration:none;
+font-weight:bold;
+color:black;
+}
+
+section{
+background:white;
+margin:20px;
+padding:20px;
+border-radius:10px;
+}
+
+.job{
+border:1px solid #ddd;
+padding:15px;
+margin-top:15px;
+border-radius:8px;
+}
+
+input,textarea{
+width:100%;
+padding:10px;
+margin-top:10px;
+margin-bottom:10px;
+}
+
+button{
+background:#0a7cff;
+color:white;
+border:none;
+padding:12px;
+border-radius:6px;
+cursor:pointer;
+}
+
+footer{
+background:#111;
+color:white;
+text-align:center;
+padding:20px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<h1>Maluleka Internet Cafe</h1>
+
+<p>Jobs • Internships • Learnerships • CV Services</p>
+
+</header>
+
+<nav>
+
+<a href="#services">Services</a>
+<a href="#jobs">Jobs</a>
+<a href="#postjob">Post Job</a>
+<a href="#uploadcv">Upload CV</a>
+
+</nav>
+
+<section id="services">
+
+<h2>Internet Cafe Services</h2>
+
+<ul>
+
+<li>Copy – R3</li>
+<li>Print – R7</li>
+<li>Colour Print – R15</li>
+<li>Scan – R8</li>
+<li>CV Creation + Print – R35</li>
+<li>Email Creation – R30</li>
+<li>Typing – R20</li>
+
+</ul>
+
+</section>
+
+<section id="jobs">
+
+<h2>Latest Jobs / Internships / Learnerships</h2>
+
+<input id="search" placeholder="Search job e.g electrician, driver">
+
+<button onclick="searchJobs()">Search</button>
+
+<div id="results">
+
+Loading jobs...
+
+</div>
+
+</section>
+
+<section id="postjob">
+
+<h2>Post a Job</h2>
+
+<form action="https://formsubmit.co/malulekainternetcafe@gmail.com" method="POST">
+
+<input type="text" name="Company" placeholder="Company Name" required>
+
+<input type="text" name="JobTitle" placeholder="Job Title" required>
+
+<input type="text" name="Location" placeholder="Location">
+
+<textarea name="Description" placeholder="Job Description"></textarea>
+
+<input type="date" name="ClosingDate">
+
+<button type="submit">Submit Job</button>
+
+</form>
+
+</section>
+
+<section id="uploadcv">
+
+<h2>Upload Your CV</h2>
+
+<form action="https://formsubmit.co/malulekainternetcafe@gmail.com" method="POST" enctype="multipart/form-data">
+
+<input type="text" name="Name" placeholder="Full Name" required>
+
+<input type="email" name="Email" placeholder="Email Address" required>
+
+<input type="file" name="CV" required>
+
+<button type="submit">Send CV</button>
+
+</form>
+
+</section>
+
+<footer>
+
+© 2026 Maluleka Internet Cafe
+
+</footer>
+
+<script>
+
+async function searchJobs(){
+
+const keyword=document.getElementById("search").value || "jobs"
+
+const url=`https://api.adzuna.com/v1/api/jobs/za/search/1?app_id=demo&app_key=demo&results_per_page=20&what=${keyword}`
+
+const res=await fetch(url)
+
+const data=await res.json()
+
+let html=""
+
+data.results.forEach(job=>{
+
+html+=`
+
+<div class="job">
+
+<h3>${job.title}</h3>
+
+<p><b>Company:</b> ${job.company.display_name}</p>
+
+<p><b>Location:</b> ${job.location.display_name}</p>
+
+<p>${job.description.substring(0,150)}...</p>
+
+<a href="${job.redirect_url}" target="_blank">
+
+<button>Apply Now</button>
+
+</a>
+
+</div>
+
+`
+
+})
+
+document.getElementById("results").innerHTML=html
+
+}
+
+searchJobs()
+
+</script>
+
+</body>
+
+</html>
