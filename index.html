@@ -4,6 +4,9 @@
 <meta charset="UTF-8">
 <title>Maluleka’s Internet Cafe</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="google-site-verification" content="8zITam1Fy1oZgzk8TN8bulsts0OwsSmpoIpb7gRy3eY" />
+
 <style>
 :root{
   --primary:#0a7cff;
@@ -55,79 +58,52 @@ footer{background:var(--dark);color:#fff;text-align:center;padding:20px;font-siz
     Apply Now – Valterra Platinum Job
   </a>
 
-  <!-- Standard Bank Learnerships -->
   <a class="jobButton" href="https://www.standardbank.com/sbg/standard-bank-group/careers/early-careers/learnerships" target="_blank">
     Apply – Standard Bank Learnerships
   </a>
 
-  <!-- Standard Bank Internships -->
   <a class="jobButton" href="https://www.standardbank.com/sbg/standard-bank-group/careers/early-careers/internships" target="_blank">
     Apply – Standard Bank Internships
   </a>
 
-  <!-- SAPS Internships Page -->
   <a class="jobButton" href="https://www.saps.gov.za/careers/internships.php" target="_blank">
-    Apply – SAPS Internships (South African Police Service)
+    Apply – SAPS Internships
   </a>
 
-  <!-- Eskom Careers -->
   <a class="jobButton" href="https://eskomcareers.ci.hr/applicant/index.php" target="_blank">
     Browse Jobs & YES Internships – Eskom Careers
   </a>
 
-  <!-- SA Youth Opportunities -->
   <a class="jobButton" href="https://sayouth.mobi/" target="_blank">
-    Explore Youth Jobs – SA Youth Portal (Free Access)
+    Explore Youth Jobs – SA Youth Portal
   </a>
 
-  <!-- StarterJobs SA -->
   <a class="jobButton" href="https://starterjobs.co.za/" target="_blank">
-    Browse Internships & Entry-Level Jobs – StarterJobs
+    Browse Internships – StarterJobs
   </a>
 
-  <!-- NYOSA Opportunities -->
   <a class="jobButton" href="https://nyosa.co.za/" target="_blank">
-    Find Jobs, Internships & Learnerships – NYOSA
+    Jobs & Learnerships – NYOSA
   </a>
 
-  <!-- YouthLearnerships SA -->
   <a class="jobButton" href="https://www.youthlearnerships.co.za/" target="_blank">
-    Learnerships & Internships – YouthLearnerships
+    Learnerships – YouthLearnerships
   </a>
 
-  <!-- GoCareers South Africa -->
   <a class="jobButton" href="https://gocareers.co.za/" target="_blank">
-    Search SA Jobs – GoCareers
+    Search Jobs – GoCareers
   </a>
 
-  <!-- More opportunities -->
   <a class="jobButton" href="https://www.careersportal.co.za/" target="_blank">
-    More Jobs & Learnerships – Careers Portal
+    More Jobs – Careers Portal
   </a>
 
-  <!-- Extra general application links -->
-  <a class="jobButton" href="https://sayouthjob.co.za" target="_blank">
-    SA Youth Job Listings & Learnerships
-  </a>
-  <a class="jobButton" href="https://studentcareer.co.za/" target="_blank">
-    Student Careers – Jobs & Learnerships
-  </a>
-  <a class="jobButton" href="https://jobssouthafrica.co.za/" target="_blank">
-    Jobs South Africa – Internship Info
-  </a>
-  <a class="jobButton" href="https://getjobsa.co.za/" target="_blank">
-    Learnerships & Internships – GetJobSA
-  </a>
-
-  <!-- Placeholder extras if needed -->
   <a class="jobButton" href="https://www.linkedin.com/jobs" target="_blank">
     Search Jobs on LinkedIn
   </a>
+
   <a class="jobButton" href="https://za.indeed.com/" target="_blank">
     Search Jobs on Indeed South Africa
-  </a>
-  <a class="jobButton" href="https://za.indeed.com/internships-jobs" target="_blank">
-    Internships on Indeed ZA
   </a>
 
 </section>
@@ -136,6 +112,7 @@ footer{background:var(--dark);color:#fff;text-align:center;padding:20px;font-siz
   <h2>Book via WhatsApp</h2>
   <input id="name" placeholder="Full Name">
   <input id="phone" placeholder="Phone Number">
+
   <select id="service">
     <option value="">Select Service</option>
     <option value="Copy">Copy</option>
@@ -148,9 +125,12 @@ footer{background:var(--dark);color:#fff;text-align:center;padding:20px;font-siz
     <option value="Typing">Typing</option>
     <option value="Other">Other</option>
   </select>
+
   <div class="priceBox">Price: <span id="price">R0</span></div>
+
   <input type="date" id="date">
   <input type="time" id="time">
+
   <button onclick="book()">📲 Book on WhatsApp</button>
 </section>
 
@@ -163,7 +143,8 @@ footer{background:var(--dark);color:#fff;text-align:center;padding:20px;font-siz
 <section id="terms">
   <h2>Terms & Conditions</h2>
   <ul>
-    <li>Services first-come, first-served.</li><li>Prices subject to change.</li>
+    <li>Services first-come, first-served.</li>
+    <li>Prices subject to change.</li>
   </ul>
 </section>
 
@@ -175,24 +156,29 @@ footer{background:var(--dark);color:#fff;text-align:center;padding:20px;font-siz
 
 <script>
 const prices={"Copy":3,"Copy Colour":5,"Print Black":7,"Print Colour":15,"Scan":8,"CV Package":35,"Email Creation":30,"Typing":20,"Other":0};
+
 function book(){
-  const n=document.getElementById("name").value;
-  const ph=document.getElementById("phone").value;
-  const svc=document.getElementById("service").value;
-  const dt=document.getElementById("date").value;
-  const tm=document.getElementById("time").value;
-  const pr=prices[svc]||"Negotiable";
-  const msg=`Booking Request
+const n=document.getElementById("name").value;
+const ph=document.getElementById("phone").value;
+const svc=document.getElementById("service").value;
+const dt=document.getElementById("date").value;
+const tm=document.getElementById("time").value;
+const pr=prices[svc]||"Negotiable";
+
+const msg=`Booking Request
 Name: ${n}
 Phone: ${ph}
 Service: ${svc}
 Date: ${dt}
 Time: ${tm}
 Price: ${pr}`;
-  window.open("https://wa.me/27732176610?text="+encodeURIComponent(msg));
+
+window.open("https://wa.me/27732176610?text="+encodeURIComponent(msg));
 }
+
 document.getElementById("service").onchange=e=>{
-  const p=prices[e.target.value];document.getElementById("price").innerText=p?("R"+p):"Negotiable";
+const p=prices[e.target.value];
+document.getElementById("price").innerText=p?("R"+p):"Negotiable";
 };
 </script>
 
