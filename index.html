@@ -1,123 +1,585 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
 
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Maluleka Internet Cafe | Jobs, CV Help, Printing & Online Services</title>
-
-<meta name="description" content="Maluleka Internet Cafe helps people apply for jobs, internships and learnerships in South Africa. We offer CV typing, printing, scanning and online services.">
-
-<meta name="keywords" content="jobs South Africa, learnerships 2026, internships South Africa, CV typing Mokopane, internet cafe services">
-
-<meta name="google-site-verification" content="8zITam1Fy1oZgzk8TN8bulsts0OwsSmpoIpb7gRy3eY"/>
+<title>MM VISION HUB (PTY) LTD</title>
 
 <style>
 
-:root{
---primary:#0a7cff;
---dark:#111;
---light:#f1f3f6;
+:root {
+
+  --blue: #082B59;
+
+  --gold: #D4AF37;
+
+  --silver: #C0C0C0;
+
+  --white: #ffffff;
+
+  --black: #050505;
+
 }
 
-body{
-margin:0;
-font-family:Arial,sans-serif;
-background:var(--light);
-line-height:1.6;
+* {
+
+  box-sizing: border-box;
+
+  margin: 0;
+
+  padding: 0;
+
 }
 
-header{
-background:linear-gradient(135deg,#000,#222);
-color:#fff;
-padding:50px 20px;
-text-align:center;
+body {
+
+  font-family: Arial, sans-serif;
+
+  background: #f5f5f5;
+
+  color: #111;
+
 }
 
-nav{
-background:#fff;
-padding:12px;
-text-align:center;
-position:sticky;
-top:0;
-z-index:100;
-box-shadow:0 2px 6px rgba(0,0,0,.1);
+header {
+
+  background: var(--black);
+
+  color: white;
+
+  border-bottom: 4px solid var(--gold);
+
+  padding: 15px 20px;
+
 }
 
-nav a{
-margin:10px;
-font-weight:bold;
-color:#000;
-text-decoration:none;
+.header-layout {
+
+  display: grid;
+
+  grid-template-columns: 1fr 1.3fr 1fr;
+
+  align-items: center;
+
+  gap: 12px;
+
+  max-width: 1400px;
+
+  margin: auto;
+
 }
 
-section{
-background:#fff;
-margin:20px;
-padding:20px;
-border-radius:12px;
-box-shadow:0 4px 10px rgba(0,0,0,.05);
+.company-name {
+
+  color: var(--gold);
+
+  font-size: 25px;
+
+  font-weight: 900;
+
+  line-height: 1.3;
+
+  text-align: left;
+
 }
 
-h2{
-color:#222;
-margin-top:0;
+.logo-area {
+
+  width: 100%;
+
+  min-height: 180px;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
 }
 
-.jobButton{
-background:var(--primary);
-color:#fff;
-border:none;
-padding:14px;
-width:100%;
-border-radius:8px;
-font-size:16px;
-margin-top:10px;
-cursor:pointer;
-text-align:center;
-text-decoration:none;
-display:inline-block;
+.logo-area img {
+
+  width: 100%;
+
+  max-width: 240px;
+
+  max-height: 180px;
+
+  object-fit: contain;
+
 }
 
-input,select{
-width:100%;
-padding:12px;
-margin:8px 0;
-border-radius:6px;
-border:1px solid #ccc;
+.logo-placeholder {
+
+  width: 230px;
+
+  height: 160px;
+
+  border: 2px dashed var(--gold);
+
+  color: var(--silver);
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  text-align: center;
+
+  padding: 10px;
+
 }
 
-.priceBox{
-background:#e6f2ff;
-padding:10px;
-border-radius:6px;
-font-weight:bold;
+.cart-button {
+
+  justify-self: end;
+
+  background: var(--gold);
+
+  color: black;
+
+  border: none;
+
+  padding: 13px 18px;
+
+  font-weight: bold;
+
+  cursor: pointer;
+
+  border-radius: 5px;
+
 }
 
-footer{
-background:var(--dark);
-color:#fff;
-text-align:center;
-padding:20px;
-font-size:14px;
+.slogan {
+
+  text-align: center;
+
+  color: var(--gold);
+
+  background: var(--blue);
+
+  padding: 13px;
+
+  font-weight: bold;
+
+  letter-spacing: 1px;
+
 }
 
-#whatsappFloat{
-position:fixed;
-bottom:20px;
-right:20px;
-width:60px;
-height:60px;
-background:#25D366;
-color:#fff;
-border-radius:50%;
-font-size:30px;
-display:flex;
-align-items:center;
-justify-content:center;
-text-decoration:none;
-box-shadow:0 4px 10px rgba(0,0,0,.3);
+nav {
+
+  background: var(--blue);
+
+  display: flex;
+
+  justify-content: center;
+
+  gap: 30px;
+
+  padding: 15px;
+
+}
+
+nav a {
+
+  color: white;
+
+  text-decoration: none;
+
+  font-weight: bold;
+
+}
+
+.hero {
+
+  background: linear-gradient(120deg, #061a35, #174b85);
+
+  color: white;
+
+  text-align: center;
+
+  padding: 65px 20px;
+
+}
+
+.hero h1 {
+
+  color: var(--gold);
+
+  font-size: 38px;
+
+  margin-bottom: 15px;
+
+}
+
+.hero p {
+
+  font-size: 17px;
+
+}
+
+.section {
+
+  max-width: 1200px;
+
+  margin: auto;
+
+  padding: 40px 18px;
+
+}
+
+.section h2 {
+
+  text-align: center;
+
+  color: var(--blue);
+
+  margin-bottom: 25px;
+
+  font-size: 30px;
+
+}
+
+.categories {
+
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 25px;
+
+}
+
+.category-card {
+
+  background: white;
+
+  border: 2px solid var(--gold);
+
+  border-radius: 10px;
+
+  overflow: hidden;
+
+  cursor: pointer;
+
+  text-align: center;
+
+  transition: .2s;
+
+}
+
+.category-card:hover {
+
+  transform: translateY(-5px);
+
+}
+
+.category-image {
+
+  height: 300px;
+
+  background: #e8e8e8;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  color: #777;
+
+  font-weight: bold;
+
+}
+
+.category-card h3 {
+
+  padding: 20px;
+
+  background: var(--blue);
+
+  color: white;
+
+  font-size: 23px;
+
+}
+
+.products {
+
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+
+  gap: 20px;
+
+}
+
+.product-card {
+
+  background: white;
+
+  border-radius: 8px;
+
+  border: 1px solid #ddd;
+
+  padding: 12px;
+
+  text-align: center;
+
+}
+
+.product-card img {
+
+  width: 100%;
+
+  height: 230px;
+
+  object-fit: contain;
+
+  background: #eee;
+
+}
+
+.product-card h3 {
+
+  margin: 12px 0;
+
+}
+
+.product-card button {
+
+  background: var(--blue);
+
+  color: white;
+
+  border: none;
+
+  padding: 12px 18px;
+
+  margin-top: 10px;
+
+  cursor: pointer;
+
+  border-radius: 5px;
+
+}
+
+.product-card button:hover {
+
+  background: var(--gold);
+
+  color: black;
+
+}
+
+#productsSection {
+
+  display: none;
+
+}
+
+#cartPanel {
+
+  display: none;
+
+  position: fixed;
+
+  inset: 0;
+
+  background: rgba(0,0,0,.65);
+
+  z-index: 1000;
+
+  justify-content: center;
+
+  align-items: center;
+
+  padding: 15px;
+
+}
+
+.cart-content {
+
+  background: white;
+
+  width: 100%;
+
+  max-width: 500px;
+
+  padding: 25px;
+
+  border-radius: 10px;
+
+  max-height: 90vh;
+
+  overflow-y: auto;
+
+}
+
+.cart-content h2 {
+
+  color: var(--blue);
+
+  margin-bottom: 15px;
+
+}
+
+.cart-item {
+
+  padding: 10px 0;
+
+  border-bottom: 1px solid #ddd;
+
+}
+
+.cart-content input,
+
+.cart-content select,
+
+.cart-content textarea {
+
+  width: 100%;
+
+  padding: 12px;
+
+  margin: 8px 0;
+
+  border: 1px solid #bbb;
+
+  border-radius: 5px;
+
+}
+
+.checkout-button {
+
+  background: #168b43;
+
+  color: white;
+
+  width: 100%;
+
+  padding: 14px;
+
+  border: none;
+
+  margin-top: 12px;
+
+  cursor: pointer;
+
+  font-weight: bold;
+
+}
+
+.close-button {
+
+  background: #333;
+
+  color: white;
+
+  padding: 10px 15px;
+
+  border: none;
+
+  cursor: pointer;
+
+  margin-top: 10px;
+
+}
+
+footer {
+
+  background: var(--black);
+
+  color: white;
+
+  text-align: center;
+
+  padding: 30px 15px;
+
+  border-top: 4px solid var(--gold);
+
+  line-height: 1.9;
+
+}
+
+footer a {
+
+  color: var(--gold);
+
+}
+
+@media(max-width: 650px) {
+
+  .header-layout {
+
+    grid-template-columns: 1fr 1fr;
+
+  }
+
+  .company-name {
+
+    font-size: 17px;
+
+  }
+
+  .logo-area {
+
+    grid-column: 1 / -1;
+
+    grid-row: 1;
+
+  }
+
+  .logo-placeholder {
+
+    width: 220px;
+
+    height: 150px;
+
+  }
+
+  .company-name {
+
+    grid-column: 1;
+
+    grid-row: 2;
+
+  }
+
+  .cart-button {
+
+    grid-column: 2;
+
+    grid-row: 2;
+
+  }
+
+  .categories {
+
+    grid-template-columns: 1fr;
+
+  }
+
+  .hero h1 {
+
+    font-size: 28px;
+
+  }
+
+  nav {
+
+    gap: 15px;
+
+    flex-wrap: wrap;
+
+  }
+
 }
 
 </style>
@@ -127,166 +589,425 @@ box-shadow:0 4px 10px rgba(0,0,0,.3);
 <body>
 
 <header>
-<h1>Maluleka’s Internet Cafe</h1>
-<p>Copy • Print • Scan • CV • Online Services</p>
+
+  <div class="header-layout">
+
+    <div class="company-name">
+
+      MM VISION HUB<br>(PTY) LTD
+
+    </div>
+
+    <div class="logo-area">
+
+      <!-- Upload your logo as assets/logo.png -->
+
+      <img src="assets/logo.png"
+
+           alt="MM VISION HUB Logo"
+
+           onerror="this.style.display='none'; document.getElementById('logoPlaceholder').style.display='flex';">
+
+      <div class="logo-placeholder" id="logoPlaceholder" style="display:none;">
+
+        UPLOAD YOUR BIG LOGO HERE
+
+      </div>
+
+    </div>
+
+    <button class="cart-button" onclick="openCart()">
+
+      🛒 CART (<span id="cartCount">0</span>)
+
+    </button>
+
+  </div>
+
 </header>
 
+<div class="slogan">
+
+  WE SOLVE PEOPLE'S PROBLEMS AT A PROFIT
+
+</div>
+
 <nav>
-<a href="#services">Services</a>
-<a href="#jobs">Jobs</a>
-<a href="#booking">Book</a>
-<a href="#privacy">Privacy</a>
-<a href="#terms">Terms</a>
+
+  <a href="#home">HOME</a>
+
+  <a href="#collections">COLLECTIONS</a>
+
+  <a href="#contact">CONTACT</a>
+
 </nav>
 
-<section id="services">
+<section class="hero" id="home">
 
-<h2>Services & Prices</h2>
+  <h1>WELCOME TO MM VISION HUB</h1>
 
-<ul>
-<li>Copy – R3</li>
-<li>Copy Colour – R5</li>
-<li>Print Black – R7</li>
-<li>Print Colour – R15</li>
-<li>Scan – R8</li>
-<li>CV + Print + PDF – R35</li>
-<li>Email Creation – R30</li>
-<li>Typing – R20</li>
-<li>Other – Negotiable</li>
-</ul>
+  <p>Discover our clothing collections.</p>
 
 </section>
 
-<section id="jobs">
+<section class="section" id="collections">
 
-<h2>Available Jobs, Internships & Learnerships</h2>
+  <h2>OUR COLLECTIONS</h2>
 
-<a class="jobButton" href="https://www.valterraplatinum.com/careers/job-opportunities/apply/jobdetail?jobid=0779de4a-df56-4139-b647-fa862c15a03e" target="_blank">Apply Now – Valterra Platinum Job</a>
+  <div class="categories">
 
-<a class="jobButton" href="https://www.standardbank.com/sbg/standard-bank-group/careers/early-careers/learnerships" target="_blank">Apply – Standard Bank Learnerships</a>
+    <div class="category-card" onclick="showCategory('Dresses')">
 
-<a class="jobButton" href="https://www.standardbank.com/sbg/standard-bank-group/careers/early-careers/internships" target="_blank">Apply – Standard Bank Internships</a>
+      <div class="category-image">
 
-<a class="jobButton" href="https://www.saps.gov.za/careers/internships.php" target="_blank">Apply – SAPS Internships</a>
+        YOUR DRESSES PHOTO HERE
 
-<a class="jobButton" href="https://eskomcareers.ci.hr/applicant/index.php" target="_blank">Browse Jobs & YES Internships – Eskom Careers</a>
+      </div>
 
-<a class="jobButton" href="https://sayouth.mobi/" target="_blank">Explore Youth Jobs – SA Youth Portal</a>
+      <h3>DRESSES</h3>
 
-<a class="jobButton" href="https://starterjobs.co.za/" target="_blank">Browse Internships – StarterJobs</a>
+    </div>
 
-<a class="jobButton" href="https://nyosa.co.za/" target="_blank">Jobs & Learnerships – NYOSA</a>
+    <div class="category-card" onclick="showCategory('Tortoise Clothes')">
 
-<a class="jobButton" href="https://www.youthlearnerships.co.za/" target="_blank">Learnerships – YouthLearnerships</a>
+      <div class="category-image">
 
-<a class="jobButton" href="https://gocareers.co.za/" target="_blank">Search Jobs – GoCareers</a>
+        YOUR TORTOISE CLOTHES PHOTO HERE
 
-<a class="jobButton" href="https://www.careersportal.co.za/" target="_blank">More Jobs – Careers Portal</a>
+      </div>
 
-<a class="jobButton" href="https://www.linkedin.com/jobs" target="_blank">Search Jobs on LinkedIn</a>
+      <h3>TORTOISE CLOTHES</h3>
 
-<a class="jobButton" href="https://za.indeed.com/" target="_blank">Search Jobs on Indeed South Africa</a>
+    </div>
 
-</section>
-
-<section id="booking">
-
-<h2>Book via WhatsApp</h2>
-
-<input id="name" placeholder="Full Name">
-<input id="phone" placeholder="Phone Number">
-
-<select id="service">
-<option value="">Select Service</option>
-<option value="Copy">Copy</option>
-<option value="Copy Colour">Copy Colour</option>
-<option value="Print Black">Print Black</option>
-<option value="Print Colour">Print Colour</option>
-<option value="Scan">Scan</option>
-<option value="CV Package">CV + Print + PDF</option>
-<option value="Email Creation">Email Creation</option>
-<option value="Typing">Typing</option>
-<option value="Other">Other</option>
-</select>
-
-<div class="priceBox">Price: <span id="price">R0</span></div>
-
-<input type="date" id="date">
-<input type="time" id="time">
-
-<button onclick="book()">📲 Book on WhatsApp</button>
+  </div>
 
 </section>
 
-<section id="privacy">
+<section class="section" id="productsSection">
 
-<h2>Privacy Policy</h2>
+  <h2 id="categoryTitle">PRODUCTS</h2>
 
-<p>We respect your privacy. We only use your information for service delivery.</p>
+  <div class="products" id="productList"></div>
 
-<p>Email: malulekainternetcafe@gmail.com</p>
-<p>Phone: 073 217 6610</p>
+  <button class="close-button" onclick="backToCollections()">
+
+    Back to collections
+
+  </button>
 
 </section>
 
-<section id="terms">
+<div id="cartPanel">
 
-<h2>Terms & Conditions</h2>
+  <div class="cart-content">
 
-<ul>
-<li>Services are first-come, first-served.</li>
-<li>Prices may change without notice.</li>
-</ul>
+    <h2>YOUR SHOPPING CART</h2>
+
+    <div id="cartItems"></div>
+
+    <h3 id="cartTotal">Total: R0</h3>
+
+    <input id="customerName" placeholder="Your full name">
+
+    <input id="customerPhone" placeholder="Your cellphone number">
+
+    <select id="delivery">
+
+      <option value="">Choose delivery method</option>
+
+      <option value="Paxi">Paxi - fee confirmed on WhatsApp</option>
+
+      <option value="Taxi">Taxi delivery - fee confirmed on WhatsApp</option>
+
+      <option value="Store Collection">Store collection - free</option>
+
+    </select>
+
+    <textarea id="deliveryAddress" placeholder="Delivery address or Paxi branch (if applicable)"></textarea>
+
+    <p id="pickupAddress" style="font-size:13px; margin:8px 0;">
+
+      Store collection: Armoede, Road 4, Mapela, 0610,
+
+      next to Jan Malebana Primary School.
+
+    </p>
+
+    <button class="checkout-button" onclick="checkout()">
+
+      ORDER ON WHATSAPP
+
+    </button>
+
+    <button class="close-button" onclick="closeCart()">Close</button>
+
+  </div>
+
+</div>
+
+<section class="section" id="contact">
+
+  <h2>CONTACT US</h2>
+
+  <p style="text-align:center; line-height:2;">
+
+    WhatsApp / Call: 0732176610<br>
+
+    Email: mmvisionhub01@gmail.com<br>
+
+    Armoede, Road 4, Mapela, 0610
+
+  </p>
 
 </section>
 
 <footer>
-<p>© 2026 Maluleka’s Internet Cafe</p>
-</footer>
 
-<a id="whatsappFloat" href="https://wa.me/27732176610" target="_blank">💬</a>
+  <h3>MM VISION HUB (PTY) LTD</h3>
+
+  WE SOLVE PEOPLE'S PROBLEMS AT A PROFIT<br>
+
+  WhatsApp: 0732176610<br>
+
+  Email: mmvisionhub01@gmail.com<br>
+
+  &copy; 2026 MM VISION HUB. All Rights Reserved.
+
+</footer>
 
 <script>
 
-const prices={
-"Copy":3,
-"Copy Colour":5,
-"Print Black":7,
-"Print Colour":15,
-"Scan":8,
-"CV Package":35,
-"Email Creation":30,
-"Typing":20,
-"Other":0
-};
+let products = [
 
-function book(){
+  // Add your products here.
 
-const n=document.getElementById("name").value;
-const ph=document.getElementById("phone").value;
-const svc=document.getElementById("service").value;
-const dt=document.getElementById("date").value;
-const tm=document.getElementById("time").value;
-const pr=prices[svc]||"Negotiable";
+  // Example:
 
-const msg=`Booking Request
-Name: ${n}
-Phone: ${ph}
-Service: ${svc}
-Date: ${dt}
-Time: ${tm}
-Price: ${pr}`;
+  // {id:1, name:"Summer Dress", category:"Dresses", price:150, image:"assets/dress1.jpg"}
 
-window.open("https://wa.me/27732176610?text="+encodeURIComponent(msg));
+];
+
+let cart = [];
+
+function showCategory(category) {
+
+  document.getElementById("productsSection").style.display = "block";
+
+  document.getElementById("categoryTitle").textContent = category;
+
+  document.getElementById("productList").innerHTML = "";
+
+  const matchingProducts = products.filter(p => p.category === category);
+
+  if (matchingProducts.length === 0) {
+
+    document.getElementById("productList").innerHTML =
+
+      "<p>No products added yet. Please check back soon.</p>";
+
+  }
+
+  matchingProducts.forEach(product => {
+
+    const card = document.createElement("div");
+
+    card.className = "product-card";
+
+    const img = document.createElement("img");
+
+    img.src = product.image || "";
+
+    img.alt = product.name;
+
+    const name = document.createElement("h3");
+
+    name.textContent = product.name;
+
+    const price = document.createElement("p");
+
+    price.textContent = "R" + Number(product.price).toFixed(2);
+
+    const button = document.createElement("button");
+
+    button.textContent = "ADD TO CART";
+
+    button.onclick = () => addToCart(product.id);
+
+    card.append(img, name, price, button);
+
+    document.getElementById("productList").appendChild(card);
+
+  });
+
+  document.getElementById("productsSection").scrollIntoView({
+
+    behavior: "smooth"
+
+  });
 
 }
 
-document.getElementById("service").onchange=e=>{
-const p=prices[e.target.value];
-document.getElementById("price").innerText=p?("R"+p):"Negotiable";
-};
+function backToCollections() {
+
+  document.getElementById("productsSection").style.display = "none";
+
+  document.getElementById("collections").scrollIntoView({
+
+    behavior: "smooth"
+
+  });
+
+}
+
+function addToCart(id) {
+
+  const product = products.find(p => p.id === id);
+
+  if (!product) return;
+
+  cart.push(product);
+
+  updateCart();
+
+  alert(product.name + " added to your cart.");
+
+}
+
+function updateCart() {
+
+  document.getElementById("cartCount").textContent = cart.length;
+
+  const items = document.getElementById("cartItems");
+
+  items.innerHTML = "";
+
+  let total = 0;
+
+  cart.forEach((product, index) => {
+
+    total += Number(product.price);
+
+    const item = document.createElement("div");
+
+    item.className = "cart-item";
+
+    const label = document.createElement("span");
+
+    label.textContent = product.name + " - R" + product.price + " ";
+
+    const remove = document.createElement("button");
+
+    remove.textContent = "Remove";
+
+    remove.onclick = () => {
+
+      cart.splice(index, 1);
+
+      updateCart();
+
+    };
+
+    item.append(label, remove);
+
+    items.appendChild(item);
+
+  });
+
+  document.getElementById("cartTotal").textContent =
+
+    "Total: R" + total.toFixed(2);
+
+}
+
+function openCart() {
+
+  document.getElementById("cartPanel").style.display = "flex";
+
+}
+
+function closeCart() {
+
+  document.getElementById("cartPanel").style.display = "none";
+
+}
+
+function checkout() {
+
+  if (cart.length === 0) {
+
+    alert("Your cart is empty.");
+
+    return;
+
+  }
+
+  const name = document.getElementById("customerName").value.trim();
+
+  const phone = document.getElementById("customerPhone").value.trim();
+
+  const delivery = document.getElementById("delivery").value;
+
+  const address = document.getElementById("deliveryAddress").value.trim();
+
+  if (!name || !phone || !delivery) {
+
+    alert("Please enter your name, cellphone number and delivery method.");
+
+    return;
+
+  }
+
+  if (delivery !== "Store Collection" && !address) {
+
+    alert("Please enter your delivery address or Paxi branch.");
+
+    return;
+
+  }
+
+  let total = cart.reduce((sum, p) => sum + Number(p.price), 0);
+
+  let message = "MM VISION HUB (PTY) LTD ORDER%0A%0A";
+
+  message += "Customer: " + encodeURIComponent(name) + "%0A";
+
+  message += "Cellphone: " + encodeURIComponent(phone) + "%0A%0A";
+
+  message += "ORDER DETAILS:%0A";
+
+  cart.forEach(p => {
+
+    message += encodeURIComponent(p.name + " - R" + p.price) + "%0A";
+
+  });
+
+  message += "%0ATotal: R" + total.toFixed(2);
+
+  message += "%0ADelivery: " + encodeURIComponent(delivery);
+
+  if (address) {
+
+    message += "%0AAddress/Branch: " + encodeURIComponent(address);
+
+  }
+
+  if (delivery === "Store Collection") {
+
+    message += "%0ACollection: Armoede, Road 4, Mapela, 0610, next to Jan Malebana Primary School.";
+
+  } else {
+
+    message += "%0ADelivery fee to be confirmed on WhatsApp.";
+
+  }
+
+  window.open("https://wa.me/27732176610?text=" + message, "_blank");
+
+}
 
 </script>
 
 </body>
-</html>
+
+</html> 
